@@ -21,7 +21,11 @@ An MCP server that exposes read-only Okta identity lookups to an AI client.
 A per tool field allowlist controls exactly what reaches the model. The
 governance question there was what an agent is permitted to do.
 
-Both repos have a `docs/decisions.md` journal with the decisions I made,
+**[terraform-okta-tenant](https://github.com/austinhalldev/terraform-okta-tenant)**
+
+Terraform configuration for the Okta objects the two projects above depend on, with plan-on-PR under a read-only credential. The governance question there was who is permitted to change the tenant, and through what path.
+
+All repos have a `docs/decisions.md` journal with the decisions I made,
 what I turned down, and what I got wrong. That's the part I'd read first.
 
 Reachable at austin@austinhall.dev.
